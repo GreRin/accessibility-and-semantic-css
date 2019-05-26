@@ -97,6 +97,7 @@ Note: if possible you should use CSS to display images that are only decorative.
 
 As I talked before there are new tags in HTML5 which are help developers with semantics, connectivity, multimedia, 2D/3D graphics, effects and ect.
 
+---
 4. **CSS semantic**
 
 4.1 "Standard" text content structure
@@ -123,5 +124,6 @@ Most of the CSS you'll write for forms will be for sizing the elements, lining u
 
 When choosing a color scheme for your website, make sure that the text color contrasts well with the background color. Your design might look cool, but it is no good if people with visual impairments like color blindness can't read your content.
 
+---
 5. **END**
 This presentation should have given you a useful high-level overview of accessibility, shown you why it's important, and looked at how you can fit it into your workflow. You should now also have a thirst to learn about the implementation details that can make sites accessible.

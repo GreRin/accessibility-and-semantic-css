@@ -1,10 +1,11 @@
 # Presentation-Accessibility-and-semantic-CSS
----
+
 # Transcript of presentation
----
+
 Link to the presentation: [https://grerin.github.io/accessibility-and-semantic-css/](https://grerin.github.io/accessibility-and-semantic-css/)
----
+
 Link to the video: [https://www.youtube.com/watch?v=e6G_kBQe_xM](https://www.youtube.com/watch?v=e6G_kBQe_xM)
+
 ---
 1. **Introduction in accessibility**
 

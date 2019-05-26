@@ -2,6 +2,8 @@
 ---
 # Transcript of presentation
 ---
+[Link to the presentation](https://grerin.github.io/accessibility-and-semantic-css/)
+---
 1. **Introduction in accessibility**
 
 Accessibility is the practice of making your websites usable by as many people as possible. We traditionally think of this as being about people with disabilities, but the practice of making sites accessible also benefits other groups such as those using mobile devices, or those with slow network connections.

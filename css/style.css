@@ -1,0 +1,61 @@
+.introduction p {
+	
+}
+
+.tableHTML {
+	display:inline-flex;
+}
+
+.tableHTML {
+	margin-right: 20px;
+}
+
+.goodTableStructure {
+	margin-left: 20px;
+}
+
+.captionTable img {
+	width: 350px;
+}
+
+.goodTableStructure img {
+	height: 450px;
+}
+
+.tableHTML p, .goodTableStructure p {
+	font-size: 25px;
+}
+
+.textAlternatives {
+	height: 200px;
+}
+
+.html5Tegs p {
+	font-size: 30px;
+}
+
+.cssAccessibility {
+	display:inline-flex;
+}
+
+.cssAccessibility p {
+	display:inline-flex;
+}
+
+.cssAccessibility-text {
+	text-align: left;
+	font-size: 20px;
+}
+
+.cssAccessibility-text p:first-child {
+	text-align: center;
+	font-size: 20px;
+}
+
+.emphasised p, .abbreviations p {
+	margin: 0 !important;
+}
+
+.links img:nth-child(1) {
+	width: 100px;
+}

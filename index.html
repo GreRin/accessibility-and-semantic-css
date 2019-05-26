@@ -1,0 +1,242 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/moon.css">
+		<link rel="stylesheet" href="css/style.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/monokai.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+				<section>
+					<h1>Accessibility and semantic CSS</h1>
+					<p>Link to the <a href="https://www.youtube.com/watch?v=e6G_kBQe_xM&feature=youtu.be">video</a></p>
+					<p>Created by Ryhor Sidoryn</p>
+				</section>
+
+				<section>
+					<section data-markdown>
+						<script type="text/template" font-size="10px">
+							<h3>So what is accessibility</h3>
+							<div class="introduction">
+								<p>1. Semantic HTML, which improves accessibility, also improves SEO, making your site more findable.</p><!-- .element: class="fragment" data-fragment-index="1" -->
+								<p>2. Caring about accessibility demonstrates good ethics and morals, which improves your public image.</p><!-- .element: class="fragment" data-fragment-index="2" -->
+								<p>3. Other good practices that improve accessibility also make your site more usable by other groups, such as mobile phone users or those on low network speed. In fact, everyone can benefit from many such improvements.<!-- .element: class="fragment" data-fragment-index="3" -->
+								<p>4. Did I mention it is also the law in some places?</p><!-- .element: class="fragment" data-fragment-index="4" -->
+							</div>
+						</script>
+					</section>
+
+					<section data-markdown>
+						<script type="text/template">
+							<h3>Accessibility guidelines and the law</h3>
+							<a href="https://www.w3.org/WAI/standards-guidelines/wcag/">Web Content Accessibility Guidelines (WCAG)</a><br><!-- .element: class="fragment" data-fragment-index="1" -->
+							<img data-src="/img/1.PNG" alt="picture"><br><!-- .element: class="fragment" data-fragment-index="1" -->
+							<img data-src="/img/2.PNG" alt="picture"><br><!-- .element: class="fragment" data-fragment-index="2" -->
+							<p>1.	Easier to develop with</p><!-- .element: class="fragment" data-fragment-index="3" -->
+							<p>2.	Better on mobile</p><!-- .element: class="fragment" data-fragment-index="4" -->
+							<p>3.	Good for SEO</p><!-- .element: class="fragment" data-fragment-index="5" -->
+						</script>
+					</section>
+				</section>
+
+				<section>
+					<section data-markdown>
+						<script type="text/template">
+							<h2>HTML and accessibility</h2>
+							<h3>Text content</h3>
+							<p>Bad semantic</p>
+							<img data-src="/img/4.PNG" alt="picture" width="700px">
+						</script>
+					</section>
+
+					<section data-markdown>
+						<script type="text/template">
+							<p>Good semantics!</p>
+							<img data-src="/img/3.PNG" alt="picture" width="700px">
+						</script>
+					</section>
+				</section>
+
+				<section>
+					<section data-markdown>
+						<script type="text/template">
+							<h3>DOM structure</h3>
+							<p>In the bad old days, people used to create page layouts using HTML tables</p>
+							<img data-src="/img/5.PNG" alt="picture" height="400px">
+						</script>
+					</section>
+
+					<section data-markdown>
+						<script type="text/template">
+							<h6>Present DOM structure</h6>
+							<img data-src="/img/6.PNG" alt="picture" height="500px"><br>
+							<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element#Content_sectioning">Content sectioning</a>
+						</script>
+					</section>
+				</section>
+
+				<section>
+					<section data-markdown>
+						<script type="text/template">
+							<h3>Type of controls</h3>
+							<p>1.	UI control (by pressing TAB)</p><!-- .element: class="fragment" data-fragment-index="1" -->
+							<p>2.	Keyboard accessibility (by giving attribute tabindex="0")</p><!-- .element: class="fragment" data-fragment-index="2" -->
+							<p>3.	Meaningful text labels</p><!-- .element: class="fragment" data-fragment-index="3" -->
+							<img data-src="/img/7.PNG" alt="picture"><br><!-- .element: class="fragment" data-fragment-index="3" -->
+							<img data-src="/img/8.PNG" alt="picture"><br><!-- .element: class="fragment" data-fragment-index="3" -->
+						</script>
+					</section>
+
+					<section data-markdown>
+						<script type="text/template">
+							<h3>Form labels</h3>
+							<img data-src="/img/15.PNG" alt="picture"><br><!-- .element: class="fragment" data-fragment-index="1" -->
+							<img data-src="/img/16.PNG" alt="picture"><br><!-- .element: class="fragment" data-fragment-index="2" -->
+						</script>
+					</section>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						<h3 class="tableHTML-H3">HTML table advanced features and accessibility</h3>
+						<div class="tableHTML">
+							<div class="captionTable">
+								<p>1. Adding a caption to your table with <caption></p><!-- .element: class="fragment" data-fragment-index="1" -->
+								<img data-src="/img/10.PNG" alt="picture"><br><!-- .element: class="fragment" data-fragment-index="1" -->
+							</div>
+							<div class="goodTableStructure">
+								<p>2.	Adding structure with <'thead'>, <'tfoot'>, and <'tbody'></p><!-- .element: class="fragment" data-fragment-index="2" -->
+								<img data-src="/img/11.PNG" alt="picture"><br><!-- .element: class="fragment" data-fragment-index="2" -->
+							</div>
+						</div>
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						<h3>Text alternatives</h3>
+						<div class="textAlternatives">
+								<img data-src="/img/12.PNG" alt="picture"><br><!-- .element: class="fragment" data-fragment-index="1" -->
+								<img data-src="/img/13.PNG" alt="picture"><br><!-- .element: class="fragment" data-fragment-index="2" -->
+						<img data-src="/img/14.PNG" alt="picture"><br><!-- .element: class="fragment" data-fragment-index="3" -->
+						</div>
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						<h3>html5 new tegs</h3>
+						<div class="html5Tegs">
+							<img data-src="/img/17.PNG" alt="picture">
+							<p>Other new HTML tegs: <'mark'>, <'figure'>, <'figcaption'>, <'data'>, <'time'>, <'output'>, <'progress'></p>
+							<p>Latest evolution of the standard that defines <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5">new HTML5 tegs</a></p>
+						</div>
+					</script>
+				</section>
+
+				<section>
+					<section data-markdown>
+						<script type="text/template">
+							<h3>CSS accessibility</h3>
+							<div class="cssAccessibility">
+								<div class="html5Tegs">
+									<p>Heading, paragraf, lists</p>
+									<img data-src="/img/18.PNG" alt="picture">
+								</div>
+								<div class="html5Tegs">
+									<p>Typical CSS</p>
+									<img data-src="/img/19.PNG" alt="picture">
+								</div>
+							</div>
+							<div class="cssAccessibility-text">
+								<p>You should:</p>
+								<p>1. Select sensible font sizes, line heights, letter spacing, etc. to make your text logical, legible, and comfortable to read.</p>
+								<p>2. Make sure your headings stand out from your body text, typically big and bold like the default styling. Your lists should look like lists.</p>
+								<p>3. Your text color should contrast well with your background color.</p>
+							</div>
+						</script>
+					</section>
+
+					<section data-markdown>
+						<script type="text/template">
+							<div class="emphasised">
+								<p>Emphasised text</p>
+								<img data-src="/img/20.PNG" alt="picture">
+								<img data-src="/img/21.PNG" alt="picture">
+							</div>
+							<div class="abbreviations">
+								<p>Abbreviations</p>
+								<img data-src="/img/22.PNG" alt="picture">
+								<img data-src="/img/23.PNG" alt="picture">
+							</div>
+						</script>
+					</section>
+
+					<section data-markdown>
+						<script type="text/template">
+							<div class="links">
+								<p>Links</p>
+								<img data-src="/img/24.PNG" alt="picture">
+								<img data-src="/img/25.PNG" alt="picture">
+							</div>
+						</script>
+					</section>
+
+					<section data-markdown>
+						<script type="text/template">
+							<div class="formElements">
+								<p>Form elements</p>
+								<img data-src="/img/26.PNG" alt="picture">
+							</div>
+						</script>
+					</section>
+
+					<section data-markdown>
+						<script type="text/template">
+							<div class="tables">
+								<p>Tables</p>
+								<img data-src="/img/27.PNG" alt="picture">
+							</div>
+						</script>
+					</section>
+				</section>
+			</div>
+		</div>
+
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true }
+				]
+			});
+		</script>
+	</body>
+</html>

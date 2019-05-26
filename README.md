@@ -2,7 +2,7 @@
 ---
 # Transcript of presentation
 ---
-[Link to the presentation](https://grerin.github.io/accessibility-and-semantic-css/)
+Link to the presentation: [https://grerin.github.io/accessibility-and-semantic-css/](https://grerin.github.io/accessibility-and-semantic-css/)
 ---
 1. **Introduction in accessibility**
 
